@@ -114,6 +114,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
 }
 
 .menu-spacing {
@@ -149,7 +150,7 @@ p {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .intro-text-content, .intro-img {
@@ -173,9 +174,11 @@ p {
     max-width: 64rem;
     height: 100vh;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     text-align: center;
     justify-content: center;
+    padding: var(--gap);
 }
 
 .grid-one-content {
